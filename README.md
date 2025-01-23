@@ -1,39 +1,86 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Vimeo Player
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A Flutter package for embedding and playing Vimeo videos seamlessly using a WebView. This package allows developers to integrate Vimeo video playback into their Flutter apps with ease and flexibility.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+---
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Embed Vimeo videos using a simple URL.
+- Supports autoplay functionality.
+- Compatible with both Android and iOS platforms.
+- Fully customizable WebView integration for enhanced control.
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Getting Started
+
+### Prerequisites
+Before using this package, ensure you have the following:
+- Flutter version `3.0.0` or above.
+- Add `webview_flutter` dependencies to your project.
+
+### Installation
+Add the following to your `pubspec.yaml`:
+```yaml
+dependencies:
+  vimeo_player: ^0.0.1
+```
+
+Run the command to fetch the package:
+```bash
+flutter pub get
+```
+
+---
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Here's a basic example of how to use the `vimeo_player` package:
 
+### Example
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:vimeo_player/vimeo_player.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Vimeo Player Example')),
+        body: const VimeoPlayerScreen(
+          vimeoURL: 'https://vimeo.com/123456789?h=abc123',
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
+---
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Features in Detail
+
+1. **Simple Integration**:
+   Pass a Vimeo video URL to the `VimeoPlayerScreen` widget, and the video will render in a WebView.
+
+2. **Autoplay Support**:
+   Videos autoplay when the widget is initialized, ensuring smooth playback.
+
+3. **Cross-Platform Compatibility**:
+   Works seamlessly on both Android and iOS with appropriate WebView configurations.
+
+---
+
+## Additional Information
+
+- For more details, visit the [GitHub repository](https://github.com/5alafawyyy/vimeo_player).
+- Contributions are welcome! Feel free to open issues or submit pull requests.
+- For support, contact the package maintainer at [your_email@example.com].
