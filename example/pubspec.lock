@@ -208,7 +208,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  vimeo_player:
+  vimeo_embed_webview_player:
     dependency: "direct main"
     description:
       path: ".."

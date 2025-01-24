@@ -8,16 +8,18 @@ import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart'
     as webviewios;
 
-class VimeoPlayerScreen extends StatefulWidget {
+class VimeoEmbedWebviewPlayerScreen extends StatefulWidget {
   final String vimeoURL;
 
-  const VimeoPlayerScreen({super.key, required this.vimeoURL});
+  const VimeoEmbedWebviewPlayerScreen({super.key, required this.vimeoURL});
 
   @override
-  State<VimeoPlayerScreen> createState() => _VimeoPlayerScreenState();
+  State<VimeoEmbedWebviewPlayerScreen> createState() =>
+      _VimeoEmbedWebviewPlayerScreenState();
 }
 
-class _VimeoPlayerScreenState extends State<VimeoPlayerScreen> {
+class _VimeoEmbedWebviewPlayerScreenState
+    extends State<VimeoEmbedWebviewPlayerScreen> {
   final GlobalKey<State<StatefulWidget>> webviewKey =
       GlobalKey<State<StatefulWidget>>();
   WebViewController? webViewControler;

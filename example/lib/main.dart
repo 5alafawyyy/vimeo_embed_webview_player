@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vimeo_player/vimeo_player.dart';
+import 'package:vimeo_embed_webview_player/vimeo_embed_webview_player.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Vimeo Player Example')),
-        body: const VimeoPlayerScreen(vimeoURL: 'https://vimeo.com/123456789'),
+        body: const VimeoEmbedWebviewPlayerScreen(
+          vimeoURL: 'https://vimeo.com/123456789',
+        ),
       ),
     );
   }

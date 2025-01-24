@@ -1,3 +1,5 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+- Initial release.
+- Supports Vimeo video embedding with autoplay.
+- iOS and macOS support.

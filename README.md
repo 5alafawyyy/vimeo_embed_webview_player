@@ -1,4 +1,4 @@
-# Vimeo Player
+# Vimeo Embed WebView Player
 
 A Flutter package for embedding and playing Vimeo videos seamlessly using a WebView. This package allows developers to integrate Vimeo video playback into their Flutter apps with ease and flexibility.
 
@@ -24,7 +24,7 @@ Before using this package, ensure you have the following:
 Add the following to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  vimeo_player: ^0.0.1
+  vimeo_embed_webview_player: ^0.0.1
 ```
 
 Run the command to fetch the package:
@@ -36,12 +36,12 @@ flutter pub get
 
 ## Usage
 
-Here's a basic example of how to use the `vimeo_player` package:
+Here's a basic example of how to use the `vimeo_embed_webview_player` package:
 
 ### Example
 ```dart
 import 'package:flutter/material.dart';
-import 'package:vimeo_player/vimeo_player.dart';
+import 'package:vimeo_embed_webview_player/vimeo_embed_webview_player.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,8 +54,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Vimeo Player Example')),
-        body: const VimeoPlayerScreen(
+        appBar: AppBar(title: const Text('Vimeo Embed WebView Player Example')),
+        body: const VimeoEmbedWebviewPlayerScreen(
           vimeoURL: 'https://vimeo.com/123456789?h=abc123',
         ),
       ),
@@ -81,6 +81,6 @@ class MyApp extends StatelessWidget {
 
 ## Additional Information
 
-- For more details, visit the [GitHub repository](https://github.com/5alafawyyy/vimeo_player).
+- For more details, visit the [GitHub repository](https://github.com/5alafawyyy/vimeo_embed_webview_player).
 - Contributions are welcome! Feel free to open issues or submit pull requests.
-- For support, contact the package maintainer at [your_email@example.com].
+- For support, contact the package maintainer at ahmedkhallaf1098@gmail.com.
