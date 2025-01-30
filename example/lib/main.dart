@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Vimeo Player Example')),
         body: const VimeoEmbedWebviewPlayerScreen(
-          vimeoURL: 'https://vimeo.com/123456789',
+          vimeoURL: 'https://vimeo.com/1051061734',
         ),
       ),
     );

@@ -6,10 +6,12 @@ A Flutter package for embedding and playing Vimeo videos seamlessly using a WebV
 
 ## Features
 
-- Embed Vimeo videos using a simple URL.
-- Supports autoplay functionality.
-- Compatible with both Android and iOS platforms.
-- Fully customizable WebView integration for enhanced control.
+- **Embed Vimeo videos** using a simple URL.  
+- **Autoplay control** with customizable options.  
+- **Fullscreen mode support** for immersive viewing.  
+- **Cross-platform compatibility** with Android and iOS.  
+- **Optimized WebView performance** with improved URL parsing.  
+- **Lightweight and easy to use** with minimal setup. 
 
 ---
 
@@ -24,7 +26,7 @@ Before using this package, ensure you have the following:
 Add the following to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  vimeo_embed_webview_player: ^0.0.4
+  vimeo_embed_webview_player: ^0.0.5
 ```
 
 Run the command to fetch the package:
@@ -56,7 +58,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Vimeo Embed WebView Player Example')),
         body: const VimeoEmbedWebviewPlayerScreen(
-          vimeoURL: 'https://vimeo.com/123456789?h=abc123',
+          vimeoURL: 'https://vimeo.com/1051061734',
         ),
       ),
     );
@@ -66,16 +68,22 @@ class MyApp extends StatelessWidget {
 
 ---
 
-## Features in Detail
+## Features in Detail  
 
-1. **Simple Integration**:
-   Pass a Vimeo video URL to the `VimeoPlayerScreen` widget, and the video will render in a WebView.
+1. **Simple Integration**  
+   Just pass a Vimeo video URL to the `VimeoEmbedWebviewPlayerScreen` widget, and the video will render inside a WebView.  
 
-2. **Autoplay Support**:
-   Videos autoplay when the widget is initialized, ensuring smooth playback.
+2. **Autoplay Control**  
+   Set `isAutoPlay` to `true` or `false` to enable or disable autoplay functionality.  
 
-3. **Cross-Platform Compatibility**:
-   Works seamlessly on both Android and iOS with appropriate WebView configurations.
+3. **Fullscreen Mode**  
+   When `isFullScreen` is `true`, the player enters landscape mode for an immersive experience.  
+
+4. **Optimized URL Parsing**  
+   Automatically extracts video ID and hash from Vimeo URLs, ensuring correct playback.  
+
+5. **Cross-Platform Compatibility**  
+   Works seamlessly on both Android and iOS with enhanced WebView configurations.  
 
 ---
 
@@ -84,3 +92,11 @@ class MyApp extends StatelessWidget {
 - For more details, visit the [GitHub repository](https://github.com/5alafawyyy/vimeo_embed_webview_player).
 - Contributions are welcome! Feel free to open issues or submit pull requests.
 - For support, contact the package maintainer at ahmedkhallaf1098@gmail.com.
+```
+
+### **What’s New in This Version (0.0.5)?**
+- **Removed `webview_flutter_wkwebview` dependency** for better compatibility.  
+- **Added `isFullScreen` and `isAutoPlay` parameters** for enhanced customization.  
+- **Improved WebView performance and loading efficiency**.  
+- **Better URL parsing logic** to handle various Vimeo URL formats.  
+- **Updated documentation with structured function descriptions**.  
