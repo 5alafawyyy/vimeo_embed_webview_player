@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Vimeo Player Example')),
+        // appBar: AppBar(title: const Text('Vimeo Player Example')),
         body: const VimeoEmbedWebviewPlayerScreen(
           vimeoURL: 'https://vimeo.com/1051061734',
         ),

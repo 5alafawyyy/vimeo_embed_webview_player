@@ -15,6 +15,13 @@ A Flutter package for embedding and playing Vimeo videos seamlessly using a WebV
 
 ---
 
+## Demo  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/5alafawyyy/vimeo_embed_webview_player/master/demo.gif" width="300"/>
+</p>
+
+---
+
 ## Getting Started
 
 ### Prerequisites
