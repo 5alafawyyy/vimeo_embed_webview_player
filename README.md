@@ -33,7 +33,7 @@ Before using this package, ensure you have the following:
 Add the following to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  vimeo_embed_webview_player: ^0.0.5
+  vimeo_embed_webview_player: ^0.0.6
 ```
 
 Run the command to fetch the package:

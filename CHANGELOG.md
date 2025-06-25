@@ -1,3 +1,11 @@
+## 0.0.6
+### Fixed
+- ✅ Flutter 3.32 compatibility
+- ✅ Any other bugs you resolved
+
+### Maintenance
+- Upgraded environment to Dart 3.0+ and Flutter 3.19+
+
 ## 0.0.5
 
 - Removed `webview_flutter_wkwebview` dependency.

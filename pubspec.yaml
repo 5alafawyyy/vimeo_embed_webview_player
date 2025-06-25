@@ -1,20 +1,19 @@
 name: vimeo_embed_webview_player
 description: A Flutter package for embedding Vimeo videos using WebView with autoplay and customization support for iOS and macOS.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/5alafawyyy/vimeo_embed_webview_player
 repository: https://github.com/5alafawyyy/vimeo_embed_webview_player
 
 environment:
-  sdk: ^3.6.1
+  sdk: ^3.8.1
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter: ^4.10.0
+  webview_flutter: ^4.13.0
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
-
